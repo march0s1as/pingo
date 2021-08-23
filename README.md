@@ -1,5 +1,3 @@
-# pingo !! 
-
 <p align="center">
   <img src="https://gophercises.com/img/gophercises_lifting.gif" width="300" height="200">
 </p>
