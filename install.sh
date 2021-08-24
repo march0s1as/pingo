@@ -13,7 +13,7 @@ instalacao(){
 	sleep 2
 	echo "${yellow}[!!] ${normal}procurando path do go."
 
-	if [ -x "$(command -v gaao)" ]; then
+	if [ -x "$(command -v go)" ]; then
 		echo "${green}[OK] ${normal}sucesso ao encontrar."
 		go mod init pink.go
 		go mod tidy	
