@@ -13,15 +13,16 @@ instalacao(){
 	sleep 2
 	echo "${yellow}[!!] ${normal}procurando path do go."
 
-	if [ -x "$(command -v go)" ]; then
+	if [ -x "$(command -v gaao)" ]; then
 		echo "${green}[OK] ${normal}sucesso ao encontrar."
 		go mod init pink.go
 		go mod tidy	
 		go build pink.go
+		echo "------------------"
 		echo "${green}[OK] ${normal}feito! para rodar a ferramenta, digite ${yellow}go run pink.go${normal} ou apenas ${yellow}./pink"
 
 	else
-		echo "${RED} favor instalar golang em seu sistema."
+		echo "${RED}favor instalar golang em seu sistema."
 	fi
 }
 
