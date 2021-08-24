@@ -10,6 +10,7 @@ RED="${C}[1;31m"
 
 instalacao(){
 	echo "${green}[OK] ${normal}iniciando a instalação."
+	sleep 2
 	echo "${yellow}[!!] ${normal}procurando path do go."
 
 	if [ -x "$(command -v go)" ]; then
